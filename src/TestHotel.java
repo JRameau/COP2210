@@ -21,46 +21,22 @@ public class TestHotel
 	// Create customer objects, calculate amounts, display receipts
 	Hotel customer1 = new Hotel("10 - M", 2, 2);
         customer1.calculate();
-        /*
-        customer1.calculateRoomCost();        
-        customer1.calculateTax();
-        customer1.calculateSubTotal();
-        customer1.calculateMealCosts();
-        customer1.calculateTip();
-        customer1.calculateAmtDue();
-        */
         display(customer1, f);	
 
         Hotel customer2 = new Hotel("12 - B");
         customer2.addNights(1);
         customer2.calculate(); 
-        /*
-        customer2.calculateRoomCost();        
-        customer2.calculateTax();
-        customer2.calculateSubTotal();
-        customer2.calculateMealCosts();
-        customer2.calculateTip();
-        customer2.calculateAmtDue();
-        */
         display(customer2, f);
 		
 
         Hotel customer3 = new Hotel("12 - C", 2);	
         customer3.addGuest(1);
         customer3.calculate();
-        /*
-        customer3.calculateRoomCost();        
-        customer3.calculateTax();
-        customer3.calculateSubTotal();
-        customer3.calculateMealCosts();
-        customer3.calculateTip();
-        customer3.calculateAmtDue();
-        */
         display(customer3, f);
     
         
         display(f);
-	}
+    }
 	
     static void display(Hotel  h, NumberFormat f)
     {
